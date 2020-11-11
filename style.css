@@ -1,0 +1,768 @@
+body
+{
+	width: 100%;
+	display: flex;
+	font-size: 1.2em;
+	font-family: 'Nunito', sans-serif;
+}
+
+/* CSS pour la section lisere */
+
+#lisere .header
+{
+	display: none;
+}
+
+.photo
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+#lisere
+{
+	width: 45%;
+	background-color: #feca07;
+	color: #4a4a4a;
+	margin-left: -2%;  /* A enlever au besoin*/
+	margin-top: -2%;   /* A enlever au besoin*/
+}
+
+#lisere img
+{
+	width: 300px;
+    height: 300px;
+    border-radius: 300%;
+    border: solid #daaf12 4px;
+}
+
+#lisere h2
+{
+	background-color: #404040;
+	color: #feca07;
+	text-align: center;
+}
+
+#lisere p
+{
+	margin-left: 10%;
+}
+
+#contact h3
+{
+	margin-left: 10%;
+}
+
+#a_propos_de_moi ul li
+{
+	list-style: none;
+	margin-top: 5%;
+}
+
+.activites
+{
+	display: flex;
+	justify-content: space-around;
+	font-size: large;
+}
+
+#lisere .fas
+{
+	font-size: 250%;
+	color: #404040;
+}
+
+.activites .fas
+{
+	border: solid #404040 5px;
+	border-radius: 100%;
+	padding: 20%;
+}
+
+.natation i, .cycliste i
+{
+	width: 75%;
+}
+
+#lisere .loisirs
+{
+	margin-top: 20%;
+	margin-bottom: 5%;
+}
+
+/* CSS pour la section corp */
+
+#corp li
+{
+	display: flex;
+}
+
+.header
+{
+	font-size: 2em;
+	margin-bottom: 19%;
+}
+
+.header h1 span
+{
+	color: #feca07;
+}
+
+.header p
+{
+	margin-top: -5%;
+	font-size: 0.7em;
+}
+
+.header p span
+{
+	border-bottom: solid 3px #feca07;
+}
+
+#corp
+{
+	width: 75%;
+	margin-left: 5%;
+	color: #4a4a4a;
+}
+
+#corp span
+{
+	font-weight: bold;
+}
+
+.periode
+{
+	display: flex;
+	width: 15%;
+}
+
+.saison
+{
+	display: flex;
+}
+
+.logo
+{
+	margin-top: 20%;
+}
+
+.logo .fas 
+{
+	color: #feca07;
+	font-size: 70%;
+}
+
+.logo .far
+{
+	color: #feca07;
+	font-size: 110%;
+}
+
+h2 .fas , h2 .far
+{
+	color: #feca07;
+	font-size: 120%;
+	margin-right: 3%;
+}
+
+#corp h2
+{
+	border-bottom: solid 3px #feca07;
+	color: #000000;
+}
+
+#formation p , #experience_professionnelle p 
+{
+	margin-left: 10%;
+}
+
+.periode
+{
+	display: flex;
+}
+
+.info p
+{
+	width: 200%;
+	margin-left: 10%;
+	padding-left: 10%;
+}
+
+.lieu_de_travail
+{
+	margin-left: 10%;
+	width: 100%;
+}
+
+#adresse
+{
+	display: flex;
+}
+
+#adresse_2
+{
+	margin-left: 20%;
+}
+
+h1 , h2
+{
+	text-transform: uppercase;
+}
+
+#corp .loisirs
+{
+	display: none;
+}
+															/* RESPONSIVE max-width: 576px */
+@media screen and (max-width: 575.98px)
+{
+	body
+	{
+		width: 100%;
+		flex-direction: column;
+		font-size: 120%;
+			
+	}
+
+	/* PARTIE JAUNE */
+
+	#lisere
+	{
+		width: 100%;
+	}
+
+	#lisere img
+	{
+		width: 200px;
+		height: 200px;
+		margin-top: -10%;
+	}
+
+	#lisere .header
+	{
+		display: block;
+		background-color: white;
+		text-align: center;
+		margin-top: -22%;
+		padding-top: 10%;
+		padding-bottom: 5%;
+	}
+
+	#lisere .header h1
+	{
+		padding-top: 10%;
+		font-size: 160%;
+	}
+
+	#lisere p
+	{
+		margin-left: 0;
+	}
+
+	#contact h3, #contact p
+	{
+		text-align: center;
+		margin-left: 0;
+	}
+
+	#a_propos_de_moi ul
+	{	
+		margin-left: -5%;
+		margin-right: 5%;		
+	}
+
+	#lisere .loisirs
+	{
+		display: none;
+	}
+
+	/*  PARTIE 2  */
+
+	#corp .header
+	{
+		display: none;
+	}
+
+	#corp h2
+	{
+		font-size: 120%;
+	}
+
+	#experience_professionnelle h2 span
+	{
+		border-bottom: solid 3px #feca07;
+	}
+
+	.saison
+	{
+		flex-direction: column;
+	}
+
+	.lieu_de_travail
+	{
+		margin-bottom: 10%;
+		margin-top: -5%;
+	}
+
+	.logo
+	{	
+		margin-top: 5%;
+	}
+
+	.periode
+	{
+		width: 100%;
+	}
+
+	#adresse
+	{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#adresse_1
+	{
+		margin-bottom: 20%;
+	}
+
+	#adresse_2
+	{
+		margin-left: 0;
+		margin-bottom: 20%;
+	}
+
+	#corp .loisirs
+	{
+		display: block;
+		background-color: #feca07;
+		color: #4a4a4a;
+		width: 130%;
+		margin-left: -10%;
+		padding-bottom: 15%;
+	}
+
+	.loisirs #h2_jaune
+	{
+		background-color: #404040;
+		color: #feca07;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 150%;
+	}
+
+	.activites
+	{
+		font-size: 200%;
+	}
+}
+															/* RESPONSIVE max-width: 768px */
+@media screen and (min-width: 576px) and (max-width: 767.98px)
+{
+	body
+	{
+		width: 100%;
+		flex-direction: column;
+		font-size: 120%;
+			
+	}
+
+	/* PARTIE JAUNE */
+
+	#lisere
+	{
+		width: 100%;
+	}
+
+	#lisere img
+	{
+		width: 200px;
+		height: 200px;
+		margin-top: -10%;
+	}
+
+	#lisere .header
+	{
+		display: block;
+		background-color: white;
+		text-align: center;
+		margin-top: -15%;
+		padding-bottom: 5%;
+	}
+
+	#lisere .header h1
+	{
+		padding-top: 10%;
+		font-size: 160%;
+	}
+
+	#lisere p
+	{
+		margin-left: 0;
+	}
+
+	#contact h3, #contact p
+	{
+		text-align: center;
+		margin-left: 0;
+	}
+
+	#a_propos_de_moi ul
+	{	
+		margin-left: -5%;
+		margin-right: 5%;		
+	}
+
+	#lisere .loisirs
+	{
+		display: none;
+	}
+
+	/*  PARTIE 2  */
+
+	#corp .header
+	{
+		display: none;
+	}
+
+	#corp h2
+	{
+		font-size: 120%;
+	}
+
+	#experience_professionnelle h2 span
+	{
+		border-bottom: solid 3px #feca07;
+	}
+
+	.saison
+	{
+		flex-direction: column;
+	}
+
+	.lieu_de_travail
+	{
+		margin-bottom: 10%;
+		margin-top: -5%;
+	}
+
+	.logo
+	{	
+		margin-top: 5%;
+	}
+
+	.periode
+	{
+		width: 100%;
+	}
+
+	#adresse
+	{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#adresse_1
+	{
+		margin-bottom: 20%;
+	}
+
+	#adresse_2
+	{
+		margin-left: 0;
+		margin-bottom: 20%;
+	}
+
+	#corp .loisirs
+	{
+		display: block;
+		background-color: #feca07;
+		color: #4a4a4a;
+		width: 130%;
+		margin-left: -10%;
+		padding-bottom: 15%;
+	}
+
+	.loisirs #h2_jaune
+	{
+		background-color: #404040;
+		color: #feca07;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 150%;
+	}
+
+	.activites
+	{
+		font-size: 200%;
+	}
+}
+															/* RESPONSIVE max-width: 992px */
+@media screen and (min-width: 768px) and (max-width: 991.98px)
+{
+	body
+	{
+		width: 100%;
+		font-size: 100%;	
+	}
+
+	/* PARTIE JAUNE */
+
+	#lisere
+	{
+		width: 50%;
+		margin-bottom: 10%;
+	}
+
+	#lisere img
+	{
+		width: 200px;
+		height: 200px;
+	}
+
+	#lisere p
+	{
+		margin-left: 0;
+	}
+
+	#contact h3, #contact p
+	{
+		text-align: center;
+		margin-left: 0;
+	}
+
+	#a_propos_de_moi ul
+	{	
+		margin-left: -5%;
+		margin-right: 5%;		
+	}
+
+	#lisere .loisirs
+	{
+		margin-top: 210%;
+	}
+
+	/*  PARTIE 2  */
+
+	#corp h2
+	{
+		font-size: 120%;
+	}
+
+	#experience_professionnelle h2 span
+	{
+		border-bottom: solid 3px #feca07;
+	}
+
+	.saison
+	{
+		flex-direction: column;
+	}
+
+	.lieu_de_travail
+	{
+		margin-bottom: 10%;
+		margin-top: -5%;
+		margin-right: 2%;
+	}
+
+	#formation p
+	{
+		margin-right: 10%;
+	}
+
+	.logo
+	{
+		margin-top: 4%; 
+	}
+
+	.periode
+	{
+		width: 100%;
+	}
+
+	#adresse
+	{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#adresse_1
+	{
+		margin-bottom: 20%;
+	}
+
+	#adresse_2
+	{
+		margin-left: 0;
+		margin-bottom: 20%;
+	}
+
+	.loisirs #h2_jaune
+	{
+		background-color: #404040;
+		color: #feca07;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 150%;
+	}
+
+	.activites
+	{
+		font-size: 100%;
+		margin-left: -2%;
+		margin-right: 2%;
+	}
+}
+															/* RESPONSIVE max-width: 1200px */
+@media screen and (min-width: 992px) and (max-width: 1199.98px)
+{
+	body
+	{
+		width: 100%;
+		font-size: 100%;	
+	}
+
+	/* PARTIE JAUNE */
+
+	#lisere
+	{
+		width: 50%;
+		margin-bottom: 10%;
+	}
+
+	#lisere p
+	{
+		margin-left: 0;
+	}
+
+	#contact h3, #contact p
+	{
+		text-align: center;
+		margin-left: 0;
+	}
+
+	#a_propos_de_moi ul
+	{	
+		margin-left: -5%;
+		margin-right: 5%;		
+	}
+
+	#lisere .loisirs
+	{
+		margin-top: 170%;
+	}
+
+	/*  PARTIE 2  */
+
+	#corp h2
+	{
+		font-size: 120%;
+	}
+
+	#experience_professionnelle h2 span
+	{
+		border-bottom: solid 3px #feca07;
+	}
+
+	.saison
+	{
+		flex-direction: column;
+	}
+
+	.lieu_de_travail
+	{
+		margin-bottom: 10%;
+		margin-top: -5%;
+		margin-right: 2%;
+	}
+
+	#formation p
+	{
+		margin-right: 10%;
+	}
+
+	.logo
+	{
+		margin-top: 3%; 
+	}
+
+	.periode
+	{
+		width: 100%;
+	}
+
+	#adresse
+	{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#adresse_1
+	{
+		margin-bottom: 20%;
+	}
+
+	#adresse_2
+	{
+		margin-left: 0;
+		margin-bottom: 20%;
+	}
+
+	.loisirs #h2_jaune
+	{
+		background-color: #404040;
+		color: #feca07;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 150%;
+	}
+
+	.activites
+	{
+		font-size: 100%;
+		margin-left: -2%;
+		margin-right: 2%;
+	}
+}
+															/* RESPONSIVE min-width: 1920px */
+@media screen and (min-width: 1920px)
+{
+	body
+	{
+		width: 100%;
+		font-size: 200%;	
+	}
+
+	/* PARTIE JAUNE */
+
+	#lisere
+	{
+		width: 50%;
+		margin-bottom: 10%;
+	}
+
+	#lisere img
+	{
+		width: 500px;
+		height: 500px;
+		border-radius: 500%;
+	}
+
+	#a_propos_de_moi ul
+	{	
+		margin-left: 5%;
+	}
+
+	.activites
+	{
+		font-size: 130%;
+	}
+
+	#lisere .loisirs
+	{
+		margin-top: 10%;
+	}
+}
